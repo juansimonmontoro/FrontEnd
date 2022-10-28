@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="container">
+        <div class="logo">
+            <img src="../../../assets/image/APLogo.png" id="logoAP">        </div>
+        <div class="redes">
+            <div>                
+                <a href="https://www.linkedin.com/in/juan-sim%C3%B3n-montoro-937a66232/"><img src="../../../assets/image/linkedin-1.png" id="linkedin"></a>
+                <a href=""><img src="../../../assets/image/facebook-1.png" id="facebook"></a>
+                <a href="https://github.com/juansimonmontoro?tab=repositories"><img src="../../../assets/image/github-1.png" id="github"></a>
+                <a href=""><img src="../../../assets/image/instagram-1.png" id="instagram"></a>
+                <a href=""><img src="../../../assets/image/twitter-1.png" id="twitter-1"></a>               
+                <button type="button" class="btn btn-outline-light " (click)="login()" *ngIf="!isLogged"> INGRESO</button>
+                <button type="button" class="btn btn-outline-light " (click)="onLogOut()" *ngIf="isLogged">CERRAR SESSION</button>
+            </div>
+        </div>
+    </div>
+
+</div>

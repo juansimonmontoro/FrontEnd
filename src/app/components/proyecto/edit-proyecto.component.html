@@ -1,0 +1,55 @@
+<div class="container" *ngIf="proyecto"></div>
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div class="card mb-10 border-dark" style="max-width: 40rem;">
+            <div class="card-header ">
+                <h5>Editar Proyecto</h5>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                                <div class="form-group">
+                                    <label for="nombreP">Nombre</label>
+                                    <input type="text" class="form-control" id="nombreP" name="nombreP"
+                                    [(ngModel)]="proyecto.nombreP"  required placeholder="Nombre">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="descripcionP">Descripcion</label>
+                                    <input type="text" class="form-control" id="descripcionP" name="descripcionP"
+                                        [(ngModel)]="proyecto.descripcionP" required required placeholder="Descripcion">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="imgP">Imagen del proyecto</label>
+                                    <input type="text" class="form-control" id="imgP" name="imgP"
+                                    [(ngModel)]="proyecto.imgP" required placeholder="https://www.google.com/.......">
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="urlP">Link del proyecto</label>
+                                    <input type="text" class="form-control" id="urlP" name="urlP"
+                                        [(ngModel)]="proyecto.urlP" required placeholder="https://www.google.com/.......">
+                                </div>
+                                <br>
+                                <button class="btn btn-primary">
+                                    Actualizar proyecto
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+       
+

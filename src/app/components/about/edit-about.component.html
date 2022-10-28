@@ -1,0 +1,73 @@
+<div class="container" *ngIf="editpersona">
+<div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+        <div class="card mb-10 border-dark" style="max-width: 40rem;">
+            <div class="card-header ">
+                <h5>Editar mi perfil</h5>
+            </div>
+            <div class="card-body">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm">
+                                <div class="form-group">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre"
+                                    [(ngModel)]="editpersona.nombre"  required>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="apellido">Apellido</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido"
+                                    [(ngModel)]="editpersona.apellido"  required>
+                                </div>
+                                <br>
+                                <div class="form-group">
+                                    <label for="descripcion">Descripcion sobre mi</label>
+                                    <input type="text" class="form-control" id="descripcion" name="descripcion"
+                                    [(ngModel)]="editpersona.descripcion" required>
+                                </div>
+                                <br>
+                                <!-- <div class="form-group">
+                                    <label for="imgE">Imagen de perfil</label>
+                                    <input type="file" class="form-control" id="img" name="img"
+                                    [(ngModel)]="editpersona.img" (change)="uploadImage($event)"
+                                    accept=".jpg, .jpeg, .png">
+                                    accept=".jpg, .jpeg, .png">
+                                </div> -->
+                                <div class="form-group">
+                                    <label for="imgE">Imagen de perfil</label>
+                                    <input type="text" class="form-control" id="img" name="img"
+                                    [(ngModel)]="editpersona.img">                                    
+                                </div>
+                                <br>
+                                <button class="btn btn-primary">
+                                    Actualizar perfil
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+       
+
+
+
+
+       
+
+
+
